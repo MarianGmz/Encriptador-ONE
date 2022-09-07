@@ -5,8 +5,12 @@
 
 body{
     background-color: #F3F5FC;
+    height: 100%;
     
     
+}
+html{
+    height: 100%;
 }
 
 
@@ -67,11 +71,11 @@ body{
 }
 
 .principal-output{
-    position: absolute;
+    position: relative;
     width: 450px;
     height: 800px;
-    right:5%;
-    top: 40px;
+    left:70%;
+    top: 0;
    
     background: #FFFFFF;
     background-image: url("assets/Muñeco.png");
@@ -117,7 +121,7 @@ body{
     line-height: 19px;
     text-align: center;
 
-/* White */
+
 
     color: #FFFFFF;
     /* Caja del boton */
@@ -130,7 +134,6 @@ body{
     background: #0A3871;
     border-radius: 24px;
 
-/* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -210,7 +213,7 @@ footer{
     background-color: #0A3871;
     height: 50px;
     position: absolute;
-   top: 1000px;
+    bottom: 0;
     text-align: center;
 }
 .copyright{

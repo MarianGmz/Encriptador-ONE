@@ -73,9 +73,13 @@ function copiar(){
     mensaje.select()
     navigator.clipboard.writeText(mensaje.value)
     if (mensaje.value !=""){
+        inputTexto.value = mensaje.value
         mensaje.value = ""
+        
         mostrarElementsoMsj()
+
     }
+
     
 
    

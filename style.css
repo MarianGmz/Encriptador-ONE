@@ -140,15 +140,11 @@ html{
     flex-grow: 0;
 }
 .botones{
-    box-sizing: border-box;
-
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
+   display: inline-block;
+   width: 700px;
+   position: relative;
+   top: -50px;
+   margin-top: 60px;
    
 }
 .encriptar:hover{

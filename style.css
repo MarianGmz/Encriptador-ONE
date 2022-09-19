@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +21,22 @@ html{
     left: 5%;
     top: 2%;
     
+}
+.dark-mode{
+    position: absolute;
+    right: 50px;
+    border-radius: 10%;
+    background-color: #495057;
+    color: #fff;
+    display: block;
+    height: 50px;
+}
+.white-mode{
+    position: absolute;
+    right: 50px;
+    border-radius: 10%;
+    display: none;
+    height: 50px;
 }
 
 .principal-input{
@@ -126,7 +144,7 @@ html{
     color: #FFFFFF;
     /* Caja del boton */
     
-    padding: 24px;
+   
     gap: 8px;
     color:#ffffff;
     width: 328px;
@@ -150,6 +168,7 @@ html{
 .encriptar:hover{
     box-shadow: 2px 2px 4px 2px #062a55;
 }
+
 .desencriptar{
     /*Texto de boton  */
     font-family: 'Inter';
@@ -202,6 +221,23 @@ html{
 }
 .copiar:hover{
     box-shadow: 2px 2px 4px 2px rgb(199, 199, 199);
+}
+.encriptar img,.desencriptar img{
+    display: inline-block;
+    position: relative;
+    right: 60px;
+    top: 10px;
+    
+}
+.desencriptar img{
+    right: 50px;
+}
+.encriptar p,.desencriptar p{
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 5px;
 }
 
 footer{

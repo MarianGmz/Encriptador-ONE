@@ -1,9 +1,12 @@
-
+const main = document.querySelector(".body")
 const inputTexto = document.querySelector(".input-texto")
 const mensaje = document.querySelector(".mensaje")
 const backgroundMensaje = document.querySelector(".principal-output")
 const elementosMensaje = document.querySelector(".info-mensaje")
 const btnCopiar = document.querySelector(".copiar")
+const btnClaro = document.querySelector(".white-mode")
+const btnOscuro = document.querySelector(".dark-mode")
+
 
 
 function mostrarElementsoMsj(){
@@ -83,4 +86,23 @@ function copiar(){
     
 
    
+}
+var valor = 0
+function darkmode(){
+    
+    if (valor == 0){
+        main.style.background = "#111B21"
+        btnClaro.style.display = "block"
+        btnOscuro.style.display = "none"
+        valor = 1
+
+
+    }
+    else if (valor == 1){
+        main.style.background = "#F3F5FC"
+        btnClaro.style.display = "none"
+        btnOscuro.style.display = "block"
+        valor = 0
+    }
+    
 }

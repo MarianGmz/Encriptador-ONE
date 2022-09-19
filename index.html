@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
     <title>Encriptador</title>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
-<body>
+<body class="body">
     <header>
         <h1 class="icono"><img src="assets/logo.png" alt="Logo de alura"></h1>
+        <button class="dark-mode" onclick=darkmode()>Modo oscuro</button>
+        <button class="white-mode" onclick=darkmode()>Modo claro</button>
     </header>
     <main>
         <section class="principal-input">
             <textarea class="input-texto" placeholder="Ingrese el texto aqui" name="" id="" cols="50"  rows="8"></textarea>
             <div class="botones">
-                <button class="encriptar" onclick=btnEncriptar()>Encriptar</button>
-                <button class="desencriptar" onclick=btnDesencriptar()>Desencriptar</button>
+                <button class="encriptar" onclick=btnEncriptar()> <img src="assets/candado-encriptar.png" alt=""> <p>Encriptar</p> </button>
+                <button class="desencriptar" onclick=btnDesencriptar()> <img src="assets/candado-desencriptar.png" alt=""> <p>Desencriptar</p> </button>
             </div>
         </section>
         <section class="principal-output">
@@ -28,7 +31,9 @@
                 <h2>Ningun mensaje fue encontrado</h2>
                 <p>Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <button class="copiar" onclick=copiar()>Copiar</button>
+            <div class="container-copiar">
+                <button class="copiar" onclick=copiar()>Copiar</button>
+            </div>
         </section>
     </main>
     <footer>
